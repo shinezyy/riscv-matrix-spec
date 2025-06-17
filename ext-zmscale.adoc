@@ -1,0 +1,5 @@
+
+State-of-the-art low-precision matrix multiplication kernel libraries, such as deepGEMM,
+apply block scaling to improve the precision of the intermediate results.
+Different from per-channel scaling that scales on M and N dimensions,
+block scaling requires to apply scaling factors on K dimension.

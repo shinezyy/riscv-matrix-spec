@@ -29,3 +29,11 @@ include::element-wise.adoc[]
 === Type-Convert Instructions
 
 include::type-convert.adoc[]
+
+=== Zmasync: Matrix Asyncronous Store Extension
+
+include::ext-zmasync.adoc[]
+
+=== Zmscale: Matrix block scaling extension
+
+include::ext-zmscale.adoc[]

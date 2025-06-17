@@ -158,6 +158,54 @@
       | msfdce64.m  |  100000  |  1   |  rs2  |  rs1  |  111  |  0   | ms3  | OP-M32
 |===
 
+.Asynchronous Store/Release/Acquire Instructions
+[cols="^5,^3,^2,^2,^2,^2,^2,^2,^3"]
+|===
+.2+^.^| *Format*          |  31  26  |  25  | 24 20 | 19 15 | 14 12 |  11  | 10 7 |  6    0
+                          | *funct6* | *ls* | *rs2* | *rs1* | *eew* | *tr* | *md* | *opcode*
+      | msae8.m.async     |  101101  |  1   |  rs2  |  rs1  |  000  |  0   | ms3  | OP-M32
+      | msae16.m.async    |  101101  |  1   |  rs2  |  rs1  |  001  |  0   | ms3  | OP-M32
+      | msae32.m.async    |  101101  |  1   |  rs2  |  rs1  |  010  |  0   | ms3  | OP-M32
+      | msae64.m.async    |  101101  |  1   |  rs2  |  rs1  |  011  |  0   | ms3  | OP-M32
+      | msbe8.m.async     |  101110  |  1   |  rs2  |  rs1  |  000  |  0   | ms3  | OP-M32
+      | msbe16.m.async    |  101110  |  1   |  rs2  |  rs1  |  001  |  0   | ms3  | OP-M32
+      | msbe32.m.async    |  101110  |  1   |  rs2  |  rs1  |  010  |  0   | ms3  | OP-M32
+      | msbe64.m.async    |  101110  |  1   |  rs2  |  rs1  |  011  |  0   | ms3  | OP-M32
+      | msce8.m.async     |  101100  |  1   |  rs2  |  rs1  |  000  |  0   | ms3  | OP-M32
+      | msce16.m.async    |  101100  |  1   |  rs2  |  rs1  |  001  |  0   | ms3  | OP-M32
+      | msce32.m.async    |  101100  |  1   |  rs2  |  rs1  |  010  |  0   | ms3  | OP-M32
+      | msce64.m.async    |  101100  |  1   |  rs2  |  rs1  |  011  |  0   | ms3  | OP-M32
+
+      | mstre8.m.async    |  101111  |  1   |  rs2  |  rs1  |  000  |  0   | ms3  | OP-M32
+      | mstre16.m.async   |  101111  |  1   |  rs2  |  rs1  |  001  |  0   | ms3  | OP-M32
+      | mstre32.m.async   |  101111  |  1   |  rs2  |  rs1  |  010  |  0   | ms3  | OP-M32
+      | mstre64.m.async   |  101111  |  1   |  rs2  |  rs1  |  011  |  0   | ms3  | OP-M32
+
+      | msate8.m.async    |  101101  |  1   |  rs2  |  rs1  |  000  |  1   | ms3  | OP-M32
+      | msate16.m.async   |  101101  |  1   |  rs2  |  rs1  |  001  |  1   | ms3  | OP-M32
+      | msate32.m.async   |  101101  |  1   |  rs2  |  rs1  |  010  |  1   | ms3  | OP-M32
+      | msate64.m.async   |  101101  |  1   |  rs2  |  rs1  |  011  |  1   | ms3  | OP-M32
+      | msbte8.m.async    |  101110  |  1   |  rs2  |  rs1  |  000  |  1   | ms3  | OP-M32
+      | msbte16.m.async   |  101110  |  1   |  rs2  |  rs1  |  001  |  1   | ms3  | OP-M32
+      | msbte32.m.async   |  101110  |  1   |  rs2  |  rs1  |  010  |  1   | ms3  | OP-M32
+      | msbte64.m.async   |  101110  |  1   |  rs2  |  rs1  |  011  |  1   | ms3  | OP-M32
+      | mscte8.m.async    |  101100  |  1   |  rs2  |  rs1  |  000  |  1   | ms3  | OP-M32
+      | mscte16.m.async   |  101100  |  1   |  rs2  |  rs1  |  001  |  1   | ms3  | OP-M32
+      | mscte32.m.async   |  101100  |  1   |  rs2  |  rs1  |  010  |  1   | ms3  | OP-M32
+      | mscte64.m.async   |  101100  |  1   |  rs2  |  rs1  |  011  |  1   | ms3  | OP-M32
+
+      | msacce8.m.async   |  101111  |  1   |  rs2  |  rs1  |  000  |  1   | ms3  | OP-M32
+      | msacce16.m.async  |  101111  |  1   |  rs2  |  rs1  |  001  |  1   | ms3  | OP-M32
+      | msacce32.m.async  |  101111  |  1   |  rs2  |  rs1  |  010  |  1   | ms3  | OP-M32
+      | msacce64.m.async  |  101111  |  1   |  rs2  |  rs1  |  011  |  1   | ms3  | OP-M32
+
+      | msyncreset        |  101100  |  0   | tok.r |       | | |    reserved        | OP-M32
+      | mrelease          |  101100  |  0   | tok.r |       | | |    reserved        | OP-M32
+      | macquire          |  101101  |  0   | tok.r |  rs1  | | |    reserved        | OP-M32
+
+|===
+
+
 .Data Move Instructions
 [cols="^5,^3,^2,^2,^2,^2,^2,^3"]
 |===
