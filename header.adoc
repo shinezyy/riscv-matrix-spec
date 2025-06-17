@@ -37,7 +37,7 @@ endif::[]
 :xrefstyle: short
 
 = RISC-V Matrix Specification
-// Stream Computing
+// Yaoyang Zhou's personal draft (built in BOSC), based off Stream Computing
 
 // Preamble
 [WARNING]
@@ -55,7 +55,7 @@ Attribution 4.0 International License (CC-BY 4.0). The full
 license text is available at
 https://creativecommons.org/licenses/by/4.0/.
 
-Copyright © 2022-2024 Stream Computing Inc.
+Copyright © 2022-2024 Stream Computing Inc. 2025 Beijing Institute of Open Source Chip
 
 [preface]
 include::contributors.adoc[]
