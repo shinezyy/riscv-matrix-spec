@@ -199,9 +199,9 @@
       | msacce32.m.async  |  101111  |  1   |  rs2  |  rs1  |  010  |  1   | ms3  | OP-M32
       | msacce64.m.async  |  101111  |  1   |  rs2  |  rs1  |  011  |  1   | ms3  | OP-M32
 
-      | msyncreset        |  101100  |  0   | tok.r |       | | |    reserved        | OP-M32
-      | mrelease          |  101100  |  0   | tok.r |       | | |    reserved        | OP-M32
-      | macquire          |  101101  |  0   | tok.r |  rs1  | | |    reserved        | OP-M32
+      | msyncreset        |  110000  |  0   | tok.r |       | | |    reserved        | OP-M32
+      | mrelease          |  110001  |  0   | tok.r |       | | |    reserved        | OP-M32
+      | macquire          |  110010  |  0   | tok.r |  rs1  | | |    reserved        | OP-M32
 
 |===
 
