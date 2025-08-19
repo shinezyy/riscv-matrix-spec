@@ -94,7 +94,8 @@ mfdiv.[cf|hf|f|d].mm     md, ms1, ms2
 mfsqrt.[cf|hf|f|d].m     md, ms1
 
 # Matrix zero, set all elements in destination matrix register to 0.
-mzero.m                  md  # clear matrix register md
+mzero.acc.m              md  # clear matrix acc register md
+mzero.tr.m               md  # clear matrix tr  register md
 ```
 
 NOTE: There is no matrix-scalar and matrix-vector version for element-wise instructions. Such operations can be replaced by a broadcast instruction and a matrix-matrix element-wise instruction.
