@@ -818,7 +818,8 @@
       | msra.w.mm     |  010001  |  0   |  1   |  ms2  |  1   |  ms1  |  010  |  0   |  md  |  OP-M32
       | msra.dw.mm    |  010001  |  0   |  1   |  ms2  |  1   |  ms1  |  011  |  0   |  md  |  OP-M32
 
-      | mzero.m       |  010010  |  0   |  0   | 0000  |  0   | 0000  |  000  |  0   |  md  |  OP-M32
+      | mzero.acc.m   |  010010  |  0   |  0   | 0000  |  0   | 0000  |  000  |  0   |  md  |  OP-M32
+      | mzero.tr.m    |  010011  |  0   |  0   | 0000  |  0   | 0000  |  000  |  0   |  md  |  OP-M32
 |===
 
 .Type Convert Instructions
