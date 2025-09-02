@@ -9,6 +9,7 @@
 |  0xC44  |    URO    | mlenb  | MLEN/8 (matrix tile register length in bytes).
 |  0xC45  |    URO    | mrlenb | RLEN/8 (matrix tile register row length in bytes).
 |  0xC46  |    URO    | mamul  | AMUL.
+|  0xC47  |    URO    | mtok   | The number of token registers.
 |  0x040  |    URW    | mstart | Start element index.
 |  0x041  |    URW    | mcsr   | Matrix control and status register.
 |===
